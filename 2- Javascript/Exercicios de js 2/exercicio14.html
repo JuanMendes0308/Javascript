@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    <script>
+        var parcela_mensal, montante2, valor_juros, tempo
+
+        parcela_mensal = parseFloat(prompt("Digite o valor do empréstimo: "))
+        valor_juros = parseFloat(prompt("Digite o valor do juros: "))
+        tempo = parseFloat(prompt("Digite a quantidade de tempo: "))
+
+        montante2 = parcela_mensal * (1 + valor_juros) ,Math.pow(tempo)
+
+        alert("O valor final é " + montante2.toFixed(2) + "\n O valor do empréstimo é " + parcela_mensal.toFixed(2) + "\n O valor do juros a ser pago é " + valor_juros.toFixed(2) )
+    </script>
+</body>
+</html>
