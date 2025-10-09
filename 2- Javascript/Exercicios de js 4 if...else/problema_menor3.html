@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var primeiroNum, segundoNum, terceiroNum
+
+        primeiroNum = parseFloat(prompt("Digite o Primeiro número: "))
+        segundoNum = parseFloat(prompt("Digite o Segundo número: "))
+        terceiroNum = parseFloat(prompt("Digite o Terceiro número: "))
+
+        if (primeiroNum < segundoNum && primeiroNum < terceiroNum)
+            alert(`O menor número é ${primeiroNum}`)
+        else if (segundoNum < primeiroNum && segundoNum < terceiroNum)
+            alert(`O menor número é ${segundoNum}`)
+        else
+            alert(`O menor número é ${terceiroNum}`)
+    </script>
+</body>
+</html>

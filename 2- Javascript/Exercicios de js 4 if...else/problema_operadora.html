@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var valor_pagar, minutos, planbasic
+
+        minutos = parseFloat(prompt("Digite a quantidade de minutos que ficou na ligação: "))
+
+        planbasic = 50.00
+
+        if (minutos > 100) {
+            valor_pagar = planbasic + (minutos - 100) * 2
+            alert(`Quantidade de minutos: ${minutos}. \n Valor a pagar R$${valor_pagar} `)
+        }
+        else {
+            alert(`Quantidade de minutos: ${minutos}. \n Valor a pagar R$50`)
+        }
+    </script>
+</body>
+
+</html>

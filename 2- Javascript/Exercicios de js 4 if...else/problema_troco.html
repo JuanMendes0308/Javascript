@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var troco, valor_produto, quantidade, precototal, dinheiroDado
+
+        valor_produto = parseFloat(prompt("Digite o valor do produto: "))
+        quantidade = parseFloat(prompt("Digite a quantidade comprada: "))
+        dinheiroDado = parseFloat(prompt("Digite a quantidade de dinheiro dada: "))
+        precototal = valor_produto * quantidade
+        troco = dinheiroDado - precototal
+        
+
+        if (dinheiroDado < precototal){
+            let diferenca = precototal - dinheiroDado
+            alert(`Está faltando R$${diferenca}`)
+        }
+        else
+            alert(`O troco é R$${troco}`)
+    </script>
+</body>
+</html>

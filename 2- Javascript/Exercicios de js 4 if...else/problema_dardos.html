@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var distancia1, distancia2, distancia3
+
+        distancia1 = parseFloat(prompt("Digite a primeira distância: "))
+        distancia2 = parseFloat(prompt("Digite a Segunda distância: "))
+        distancia3 = parseFloat(prompt("Digite a Terceira distancia: "))
+
+        if (distancia1 > distancia2 && distancia1 > distancia3)
+            alert(`A maior distância é ${distancia1}`)
+        else if (distancia2 > distancia1 && distancia2 > distancia3)
+            alert(`A maior distância é ${distancia2}`)
+        else
+            alert(`A maior distância é ${distancia3}`)
+    </script>
+</body>
+</html>

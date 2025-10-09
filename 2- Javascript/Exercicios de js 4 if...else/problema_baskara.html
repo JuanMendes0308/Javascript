@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num1, num2, num3, x1, x2, delta
+
+        num1 = parseFloat(prompt("Digite um número: "))
+        num2 = parseFloat(prompt("Digite outro número: "))
+        num3 = parseFloat(prompt("Digite outro número: "))
+
+        delta = (num2 * num2) - (4 * num1 * num3)
+        
+        if (delta <= 0)
+            alert("A equação não possui raízes reais.")
+        else
+        x1 = (-num2 + Math.sqrt(delta)) / (2 * num1);
+        x2 = (-num2 - Math.sqrt(delta)) / (2 * num1);
+            alert(`As raízes são: x1 = ${x1.toFixed(4)} e x2 = ${x2.toFixed(4)}`)
+
+    </script>
+</body>
+
+</html>
