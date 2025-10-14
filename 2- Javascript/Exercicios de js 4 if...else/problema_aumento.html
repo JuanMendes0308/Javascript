@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var novoSalario, aumento, salarioAntigo, porcentagem
+
+        salarioAntigo = parseFloat(prompt("Digite o salário atual: "))
+
+        if(salarioAntigo <= 1000){
+            aumento = (20/100) * salarioAntigo
+            novoSalario = aumento + salarioAntigo
+            porcentagem = 20
+            alert(`Salário da pessoa: ${salarioAntigo}\nNovo salário: ${novoSalario.toFixed(2)}\nAumento: ${aumento.toFixed(2)}\nPorcentagem: ${porcentagem}%`)
+        }
+        else if(salarioAntigo <= 3000 ){
+            aumento = (15/100) * salarioAntigo
+            novoSalario = aumento + salarioAntigo
+            porcentagem = 15
+            alert(`Salário da pessoa: ${salarioAntigo}\nNovo salário: ${novoSalario.toFixed(2)}\nAumento: ${aumento.toFixed(2)}\nPorcentagem: ${porcentagem}%`)
+        }
+        else if(salarioAntigo <= 8000 ){
+            aumento = (10/100) * salarioAntigo
+            novoSalario = aumento + salarioAntigo
+            porcentagem = 10
+            alert(`Salário da pessoa: ${salarioAntigo}\nNovo salário: ${novoSalario.toFixed(2)}\nAumento: ${aumento.toFixed(2)}\nPorcentagem: ${porcentagem}%`)
+        }
+        else if(salarioAntigo >= 8000 ){
+            aumento = (5/100) * salarioAntigo
+            novoSalario = aumento + salarioAntigo
+            porcentagem = 5
+            alert(`Salário da pessoa: ${salarioAntigo}\nNovo salário: ${novoSalario.toFixed(2)}\nAumento: ${aumento.toFixed(2)}\nPorcentagem: ${porcentagem}%`)
+        }
+    </script>
+</body>
+</html>

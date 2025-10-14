@@ -7,7 +7,21 @@
 </head>
 <body>
     <script>
-        
+        var celsius, fahrenheit, calcCelsius, calcFahrenheit, escolha
+
+        escolha = prompt("Você vai digitar a temperatura em qual escala (C/F)?: ")
+
+        if (escolha == "C"){
+            celsius = parseFloat(prompt("Digite a temperatura em Celsius: "))
+            calcCelsius = celsius * 1.8 + 32
+            alert(`A temperatura equivalente em fahrenheit é ${calcCelsius.toFixed(2)}`)
+        }
+        else if (escolha == "F"){
+            fahrenheit = parseFloat(prompt("Digite a temperatura em Fahrenhreit: "))
+            calcFahrenheit = fahrenheit / 1.8 - 32
+            alert(`A temperatura equivalente em Celsius é ${calcFahrenheit.toFixed(2)}`)
+        }
+
     </script>
 </body>
 </html>

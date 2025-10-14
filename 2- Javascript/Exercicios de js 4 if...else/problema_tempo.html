@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var hr_inicial, hr_final, hr_total, tempo, tempoAux
+
+        hr_inicial = parseFloat(prompt("Digite o tempo inicial do jogo: "))
+        hr_final = parseFloat(prompt("Digite o tempo final do jogo: "))
+        tempo = 24
+        
+        if(hr_inicial > hr_final){
+            tempoAux = hr_inicial - hr_final
+            hr_total = tempo - tempoAux
+            alert(`O tempo de jogo foi ${hr_total}hora(s)`)
+        }
+        else if(hr_inicial < hr_final){
+            hr_total = Math.abs(hr_inicial - hr_final) 
+            alert(`O tempo de jogo foi ${hr_total}hora(s)`)
+        }
+        else{
+            alert(`O tempo de jogo foi 24hora(s)`)
+        }
+
+    </script>
+</body>
+
+</html>

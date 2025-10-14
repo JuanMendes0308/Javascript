@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var codigo_produto, preco, quantidade, valorFinal
+
+        codigo_produto = parseFloat(prompt("Código do produto           Preço do produto\n 1                                        R$5.00\n 2                                       R$3.50\n 3                                       R$4.80\n 4                                       R$8.90\n 5                                       R$7.32\n"))
+        quantidade = parseInt(prompt("Digite a quantidade: "))
+
+        if(codigo_produto == "1"){
+            preco = 5.00
+            valorFinal = preco * quantidade
+            alert(`Código do produto comprado: ${codigo_produto}\nQuantidade comprada: ${quantidade}\nValor a pagar: R$${valorFinal.toFixed(2)}`)
+        }
+        else if(codigo_produto == "2"){
+            preco = 3.50
+            valorFinal = preco * quantidade
+            alert(`Código do produto comprado: ${codigo_produto}\nQuantidade comprada: ${quantidade}\nValor a pagar: R$${valorFinal.toFixed(2)}`)
+        }
+        else if(codigo_produto == "3"){
+            preco = 4.80
+            valorFinal = preco * quantidade
+            alert(`Código do produto comprado: ${codigo_produto}\nQuantidade comprada: ${quantidade}\nValor a pagar: R$${valorFinal.toFixed(2)}`)
+        }
+        else if(codigo_produto == "4"){
+            preco = 8.90
+            valorFinal = preco * quantidade
+            alert(`Código do produto comprado: ${codigo_produto}\nQuantidade comprada: ${quantidade}\nValor a pagar: R$${valorFinal.toFixed(2)}`)
+        }
+        else if(codigo_produto == "5"){
+            preco = 7.32
+            valorFinal = preco * quantidade
+            alert(`Código do produto comprado: ${codigo_produto}\nQuantidade comprada: ${quantidade}\nValor a pagar: R$${valorFinal.toFixed(2)}`)
+        }
+    </script>
+</body>
+</html>
