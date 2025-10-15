@@ -11,9 +11,9 @@
 
         glicose = parseFloat(prompt("Digite a quantidade de glicose no sangue: "))
 
-        if (glicose < 100)
+        if (glicose <= 100)
             alert(`A glicose no sangue é ${glicose}mg/dl. \n Está normal`)
-        else if (glicose < 140)
+        else if (glicose <= 140)
             alert(`A glicose no sangue é ${glicose}mg/dl. \n Está elevado`)
         else if (glicose > 140)
             alert(`A glicose no sangue é ${glicose}mg/dl. \n Está com diabetes`)
