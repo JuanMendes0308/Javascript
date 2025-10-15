@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let idade = 0
+        let media 
+        let soma = 0
+        let contador = 0
+
+        while (idade >= 0) {
+            idade = parseFloat(prompt("Digite a sua idade: "))
+        
+            if(idade <= 0){
+                break
+            }
+
+            soma = soma + idade
+            contador ++
+
+        } 
+
+         if(idade === 0){
+            alert(`Impossivel calcular`)
+         }
+        else{
+        media = soma / contador
+        alert(`Media = ${media}`)
+        }
+    </script>
+</body>
+
+</html>
