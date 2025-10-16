@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var senha, senhaFalsa
+
+        senha = parseFloat(prompt("Digite a senha"))
+
+        do{
+            senhaFalsa = parseFloat(prompt("Digite a senha novamente"))
+            
+        }while(senhaFalsa != senha)
+    
+        if(senha == senhaFalsa){
+                alert("Acesso Permitido")
+            }
+            else if(senha != senhaFalsa){
+                alert("Senha invalida! Tente Novamene")
+            }
+    </script>
+</body>
+</html>
