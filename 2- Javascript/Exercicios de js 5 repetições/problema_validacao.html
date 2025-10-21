@@ -11,21 +11,27 @@
     <script>
         var nota1, nota2, media2
 
-        while (nota1 >= 0 && nota2 >= 0) {
+         do {
             nota1 = parseFloat(prompt("Digite o primeiro numero: "))
 
-            if (nota1 < 0 || nota1 >= 11) {
+            if(nota1 < 0 || nota1 >= 11) {
                 alert("Valor invalido! Tente novamente")
-                break
             }
 
-            nota2 = parseFloat(prompt("Digite o segundo numero: "))
+            
+        }while(nota1 <= 0 || nota1 >= 11)
+
+        do{
+        nota2 = parseFloat(prompt("Digite o segundo numero: "))
 
             if (nota2 < 0 || nota2 >= 11) {
                 alert("Valor invalido! Tente novamente")
-                break
             }
-        }
+        }while(nota2 <= 0 || nota2 >= 11)
+
+        media2 = (nota1 + nota2) / 2
+
+        alert(`Primeira nota: ${nota1}.\nSegunda nota: ${nota2}\nMedia: ${media2}`)
     </script>
 </body>
 

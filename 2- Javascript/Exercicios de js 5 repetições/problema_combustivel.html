@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let alcool = 0
+        let gasolina = 0 
+        let diesel = 0 
+        let codigo
+
+        do{
+        codigo = parseInt(prompt("Informe um codigo (1, 2, 3) ou 4 para parar"))
+
+        if(codigo == 1){
+            alcool++
+            
+        }
+        else if(codigo == 2){
+            gasolina++
+            
+        }
+        else if(codigo == 3){
+            diesel++
+            
+        }
+
+        }while(codigo != 4)
+
+        alert(`Muito Obrigado\nAlcool: ${alcool}\nGasolina: ${gasolina}\nDiesel: ${diesel}`)
+    </script>
+</body>
+</html>
