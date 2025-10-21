@@ -1,32 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="idade.js" type="text/javascript" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <script>
-        var x, y
-
-        do{
-        x = parseFloat(prompt("Digite o valor de X: "))
-        y = parseFloat(prompt("Digite o valor de Y: "))
-
-        if( x > 0 && y > 0){
-            alert("Quadrante Q1")
-        }
-        else if( x < 0 && y < 0){
-            alert("Quadrante Q3")
-        }
-        else if( x > 0 && y < 0){
-            alert("Quadrante Q4")
-        }
-        else if( x < 0 && y > 0){
-           alert("Quadrante Q2")
-        }
-        
-        }while(x != 0 || y != 0)
-    </script>
+ 
+    <h1>INFORME SUA IDADE!</h1>
+ 
+    <input type="number" id="idade" placeholder="Insira sua idade">
+    <input type="button" value="Enviar" onclick="voto()">
+ 
+    <div id="resposta"></div>
+   
 </body>
 </html>
