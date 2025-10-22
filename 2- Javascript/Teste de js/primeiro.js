@@ -1,6 +1,5 @@
 function voto(){
 let idade = window.document.getElementById('idade')
- 
 let resposta = window.document.getElementById('resposta')
 let anosdeidade = Number(idade.value)
  
