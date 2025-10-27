@@ -13,8 +13,14 @@
     </header>
 
     <section>
-        <input type="number" id="idade" placeholder="Insira a sua idade">
-        <input type="button" value="Enviar" onclick="Idade()">
+        <input type="number" max="2025" min="1900" id="idade" placeholder="Insira a sua data de nascimento, de 1900 á 2025">
+        
+        <div id="sexo"><p>Sexo:</p>
+            <div id="masc"><label for="sexo">Masculino</label>
+            <input type="radio" name="sexo" id="masc" checked></div>
+            <div id="fem"><label for="sexo">Feminino</label>
+            <input type="radio" name="sexo" id="fem"></div>
+            <input type="button" value="Enviar" onclick="Idade()"></div>
         <div>
         <img src="" alt="Foto de alguém" id="alguem">
         </div>
