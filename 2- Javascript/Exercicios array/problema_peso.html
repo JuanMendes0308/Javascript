@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const peso = [91, 93, 108, 98, 94]
+        const idade = [30, 17, 28, 57, 41]
+        let soma = 0
+        let maior = 0
+
+        for (let i = 0; i < idade.length; i++) {
+            soma += idade[i] / 5
+        }
+
+        for(let a = 0; a < peso.length; a++){
+            if(peso[a] >= 90){
+                maior++
+            
+            }
+            
+        }
+        alert(`Idade: ${idade}\nMédia das idades: ${soma.toFixed(0)}\n\nPeso: ${peso}\nPessoas com mais de 90 quilos: ${maior}`);
+
+    </script>
+</body>
+
+</html>

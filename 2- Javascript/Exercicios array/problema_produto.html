@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const produtos = [" Mouse Gamer", " Teclado Mecânico", " Monitor", " PC Gamer", " Notebook"]
+
+        for(let i = 0; i < produtos.length; i++){
+            let numeroproduto = i+1
+            alert(`O produto ${produtos[i]} é o número ${numeroproduto} do catálogo`)
+        }
+
+        produtos.pop(4)
+
+        let produtosaux = [" Mouse Gamer", " Teclado Mecânico", " Monitor", " PC Gamer", " Notebook"]
+
+        alert(`O produto ${produtosaux(4)} foi removido`)
+        
+    </script>
+</body>
+</html>

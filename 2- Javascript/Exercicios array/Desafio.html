@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const admins = ["Alice", "Maria", "Charles" ]
+        let usuarioAtual = prompt("Digite o nome de usuario")
+
+        for(let usuarios in admins){
+            if(admins.includes(usuarioAtual))
+            alert(`Acesso total concedido. Bem-Vindo(a) ${usuarioAtual}`)
+            else{
+                alert(`Acesso restrito. Faça login como administrador`)
+            }
+            break
+        }
+    </script>
+</body>
+</html>
