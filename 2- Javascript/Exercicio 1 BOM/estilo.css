@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(99, 238, 180);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin-top: 10px;
+    text-align: center;
+}
+
+section {
+    width: 550px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.603);
+    border-style: solid;
+}
+
+div {
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+#imagem {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    display: none;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#button {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    font-weight: 700;
+    background-color: rgb(99, 238, 180);
+    color: white;
+}
+
+input {
+    margin: 5px;
+}
+
+#flista {
+    width: 45%;
+}
+
+#lista {
+    text-align: left;
+}
+
+#botao_adicionar,
+#botao_calcular {
+    background-color: rgb(105, 136, 123);
+    color: white;
+}
+
+#botaocalcular {
+    padding: 5px;
+}
+
+#resp {
+    text-align: justify;
+}
+
+#resp p {
+    padding: 5px;
+}
+
+strong {
+    color: rgb(0, 0, 0);
+}
