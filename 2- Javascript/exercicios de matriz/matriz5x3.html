@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const linhas = 5;
+        const colunas = 3;
+        const matriz = [];
+
+        for (let i = 0; i < linhas; i++) {
+            matriz[i] = [];
+            for (let j = 0; j < colunas; j++) {
+                const valor = parseFloat(prompt(`Informe o valor real para a posição [${i+1},${j+1}]`));
+                matriz[i][j] = isNaN(valor) ? 0 : valor;
+            }
+        }
+
+        let soma = 0;
+        let contador = 0;
+        for (let i = 0; i < linhas; i++) {
+            for (let j = 0; j < colunas; j++) {
+                soma += matriz[i][j];
+                contador++;
+            }
+        }
+        const media = soma / contador;
+
+        alert(`Média dos ${contador} elementos da matriz: ${media}`);
+    </script>
+</body>
+</html>

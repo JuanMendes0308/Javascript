@@ -13,16 +13,14 @@
             ["9", "7", "3"]
         ]
 
-        let soma1 = 0
-
         for (let i = 0; i < matriz.length; i++){
+            let somaLinha = 0;
 
-
-            for(let j = 0; j <matriz[i].length; j++){
-                soma1 += matriz[i][j]
-                alert (matriz[i][j])
-                alert(soma1)
+            for(let j = 0; j < matriz[i].length; j++){
+                somaLinha += Number(matriz[i][j]);
             }
+
+            alert(`Soma da linha ${i + 1}: ${somaLinha}`);
         }
     </script>
 </body>
