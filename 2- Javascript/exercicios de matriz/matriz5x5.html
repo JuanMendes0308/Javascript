@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz 5x5</title>
+</head>
+<body>
+    <script>
+        const tamanho = 5;
+        const matriz = [];
+
+        for (let i = 0; i < tamanho; i++) {
+            matriz[i] = [];
+            for (let j = 0; j < tamanho; j++) {
+                const valor = parseInt(prompt(`Digite o inteiro para a posição [${i+1},${j+1}]`), 10);
+                matriz[i][j] = isNaN(valor) ? 0 : valor;
+            }
+        }
+
+        let soma = 0;
+        for (let i = 0; i < tamanho; i++) {
+            for (let j = 0; j < tamanho; j++) {
+                soma += matriz[i][j];
+            }
+        }
+
+        alert(`Soma de todos os elementos da matriz 5x5: ${soma}`);
+    </script>
+</body>
+</html>

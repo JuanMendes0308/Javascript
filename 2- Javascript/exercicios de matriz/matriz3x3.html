@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const matriz = [
+            ["5", "2", "4"],
+            ["8", "6", "2"],
+            ["9", "7", "3"]
+        ]
+
+        for (let i = 0; i < matriz.length; i++){
+            let somaLinha = 0;
+
+            for(let j = 0; j < matriz[i].length; j++){
+                somaLinha += Number(matriz[i][j]);
+            }
+
+            alert(`Soma da linha ${i + 1}: ${somaLinha}`);
+        }
+    </script>
+</body>
+</html>
