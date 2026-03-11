@@ -1,4 +1,7 @@
 function Idade() {
+    var agora = new Date();
+    var ano = agora.getFullYear()
+
     let corpo = window.document.getElementById('corpo')
     let imagem = window.document.getElementById('alguem')
     let resposta = window.document.getElementById('resp')
@@ -6,7 +9,7 @@ function Idade() {
     let sexo = window.document.getElementsByName('sexo')
 
     let anos = Number(idade.value)
-    let anoAtual = 2025 - anos
+    let anoAtual = ano - anos
     let genero = ''
 
     if (sexo[0].checked) {
